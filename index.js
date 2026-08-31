@@ -7,12 +7,12 @@ function convert(){
     if(toFah.checked){
         temp = Number(textBox.value);
         temp = temp * 9 / 5 + 32;
-        result.textContent = temp + " F";
+        result.textContent = Math.round(temp) + " F";
     }
     else if(toCel.checked){
         temp = Number(textBox.value);
         temp = (temp - 32) * (5/9);
-        result.textContent = temp + " C";
+        result.textContent = Math.round(temp) + " C";
     }
     else{
         result.textContent = "Select a unit";
